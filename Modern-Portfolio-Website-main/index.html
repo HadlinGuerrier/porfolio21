@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!----------
+Nom du Projet : Portfolio Moderne
+Description : Un portfolio responsive moderne réalisé
+             avec HTML CSS et JavaScript Vanilla.
+Auteur : Guerrier Hadlin
+Licence : MIT License
+Copyright : 2024 ©Hadlin 
+---------->
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hadlin - Portfolio Professionnel</title>
+  <!-- CSS Personnalisé -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/blog-single.css">
+  <link rel="stylesheet" href="css/skins/color-1.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <!-- Style Switcher -->
+  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled />
+  <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled />
+  <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled />
+  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled />
+  <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled />
+
+  <link rel="stylesheet" href="css/style-switcher.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/fabicon.png" />
+
+  <!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    // Initialise EmailJS avec votre User ID
+    emailjs.init('30ExrdbsLngtaUOPE');
+</script>
+</head>
+
+<body class="dark">
+  <!-- Conteneur Principal Début -->
+  <div class="main-container">
+    <!-- Barre Latérale Début -->
+    <div class="aside">
+      <div class="logo">
+        <a href="index.html"><span>H</span>adlin</a>
+      </div>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+      <ul class="nav">
+        <li>
+          <a href="#home" class="active"><i class="fa fa-home"></i> Accueil</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa fa-user"></i> À Propos</a>
+        </li>
+        <li>
+          <a href="#service"><i class="fa fa-list"></i> Services</a>
+        </li>
+        <li>
+          <a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a>
+        </li>
+        <li>
+          <a href="#blog"><i class="fa-brands fa-readme"></i> Blog</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fa fa-comments"></i> Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Barre Latérale Fin -->
+    <!-- Contenu Principal Début -->
+    <div class="main-content">
+      <!-- Section Accueil Début -->
+      <section class="home active section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">
+                Bonjour, je m'appelle <span class="name">Guerrier Hadlin</span>
+              </h3>
+              <h3 class="my-profession">
+                Je suis <span class="typing">Développeur Web,Designer</span>
+              </h3>
+              <p>
+                Développeur web avec plus de 3 ans d'expérience.
+                Mes compétences incluent la création de sites web,
+                le design graphique, le développement d'applications Python et bien plus...
+              </p>
+              <a href="#" class="btn">Télécharger CV</a>
+            </div>
+            <div class="home-img padd-15">
+              <img src="images/hero (2).jpg" alt="profil" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Accueil Fin -->
+
+      <!-- Section À Propos Début -->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>À Propos</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>Je suis Guerrier Hadlin, <span>Développeur Web</span></h3>
+                  <p>
+                    Passionné par les technologies web, je crée des solutions digitales sur mesure.
+                    Mon approche combine créativité et rigueur technique pour répondre
+                    aux besoins spécifiques de chaque projet.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>Date de naissance : <span>01 Août 2001</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Âge : <span>24 ans</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Site web : <span>www.monsite.com</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Email : <span>h-guerrier@gmail.com</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Diplôme : <span>Informatique</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Téléphone : <span>+509 5561 1401</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Ville : <span>Port-au-Prince</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Freelance : <span>Disponible</span></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      <a href="#" class="btn">Télécharger CV</a>
+                      <a href="#contact" class="btn hire-me">Me Contacter</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skills-item padd-15">
+                      <h5>HTML,CSS & JS</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 95%"></div>
+                        <div class="skill-percent">95%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>Node JS</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 75%"></div>
+                        <div class="skill-percent">75%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>Python</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 65%"></div>
+                        <div class="skill-percent">65%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>EXCEL</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 80%"></div>
+                        <div class="skill-percent">80%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>SQL</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 80%"></div>
+                        <div class="skill-percent">80%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="education padd-15">
+                    <h3 class="title">Education</h3>
+                    <div class="row">
+                        <div class="timeline-box padd-15">
+                            <div class="timeline shadow-dark">
+                                <!-- Timeline item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                        <i class="fa fa-calendar"></i> 2021 - 2023
+                                    </h3>
+                                    <h4 class="timeline-title">
+                                        Programmation .NET au CENTU (RD)
+                                    </h4>
+                                    <p class="timeline-text">
+                                        Formation intensive en développement .NET avec PYTHON, couvrant les concepts avancés de programmation orientée objet et la création d'applications Windows.
+                                    </p>
+                                </div>
+                                <!-- Timeline item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                        <i class="fa fa-calendar"></i> 2023 - 2024
+                                    </h3>
+                                    <h4 class="timeline-title">
+                                        Web design
+                                    </h4>
+                                    <p class="timeline-text">
+                                        Apprentissage des principes du design web moderne, incluant HTML5, CSS3, JavaScript et les frameworks front-end comme Bootstrap.
+                                    </p>
+                                </div>
+                                <!-- Timeline item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                        <i class="fa fa-calendar"></i> 2013 - 2015
+                                    </h3>
+                                    <h4 class="timeline-title">
+                                        Formation EXCEL
+                                    </h4>
+                                    <p class="timeline-text">
+                                        Maîtrise des fonctionnalités avancées d'Excel incluant les macros, tableaux croisés dynamiques et formules complexes pour l'analyse de données.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience padd-15">
+                    <h3 class="title">Experience</h3>
+                    <div class="row">
+                        <div class="timeline-box padd-15">
+                            <div class="timeline shadow-dark">
+                                <!-- Timeline item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                        <i class="fa fa-calendar"></i> 2023 - 2025
+                                    </h3>
+                                    <h4 class="timeline-title">
+                                        FREELANCER
+                                    </h4>
+                                    <p class="timeline-text">
+                                        Développement de sites web et applications sur mesure pour divers clients, avec gestion complète des projets de la conception à la mise en production.
+                                    </p>
+                                </div>
+                                <!-- Timeline item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                        <i class="fa fa-calendar"></i> 2025
+                                    </h3>
+                                    <h4 class="timeline-title">
+                                        Manager website (ECOLE PIERRE TOUSSAINT)
+                                    </h4>
+                                    <p class="timeline-text">
+                                        Refonte et maintenance du site web de l'établissement, optimisation du référencement et mise en place d'un système de gestion de contenu.
+                                    </p>
+                                </div>
+                                <!-- Timeline item -->
+                                <div class="timeline-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="timeline-date">
+                                        <i class="fa fa-calendar"></i> 2013 - 2015
+                                    </h3>
+                                    <h4 class="timeline-title">
+                                        Formateur à SCOMTECH INSTITUTE
+                                    </h4>
+                                    <p class="timeline-text">
+                                        Enseignement des bases de l'informatique et des outils bureautiques à des groupes d'étudiants, avec création de supports pédagogiques.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+            <!-- About Section End -->
+            
+            <!-- Services Section Start -->
+            <section class="service section" id="service">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Services item -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>
+                                    Création de designs modernes et responsives adaptés à tous les appareils, avec une attention particulière à l'expérience utilisateur.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Services item -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Web Developer</h4>
+                                <p>
+                                    Développement de sites web et applications web performantes utilisant les dernières technologies front-end et back-end.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Services item -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>Développeur d'applications Python</h4>
+                                <p>
+                                    Conception et développement d'applications desktop et scripts automatisés en Python pour optimiser vos processus métiers.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Services item -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Intégration web</h4>
+                                <p>
+                                    Transformation de maquettes graphiques en sites web fonctionnels avec un code propre, organisé et respectant les standards.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Services item -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <h4>SEO</h4>
+                                <p>
+                                    Optimisation des sites web pour améliorer leur visibilité sur les moteurs de recherche et attirer plus de trafic qualifié.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Services item -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-bullhorn"></i>
+                                </div>
+                                <h4>Formateur EXCEL</h4>
+                                <p>
+                                    Cours personnalisés sur Excel pour tous niveaux, de l'initiation aux fonctions avancées de traitement et analyse de données.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+      <!-- Services Section End -->
+
+      <!-- Portfolio Section Start -->
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Portfolio</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="portfolio-heading padd-15">
+              <h2>My Last Projects :</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Portfolio item -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-innner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/portfolio-1.jpg" alt="portfolio-1" />
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio item -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-innner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/portfolio-2.jpg" alt="portfolio-2" />
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio item -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-innner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/portfolio-3.jpg" alt="portfolio-3" />
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio item -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-innner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/portfolio-4.jpg" alt="portfolio-4" />
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio item -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-innner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/portfolio-5.jpg" alt="portfolio-5" />
+                </div>
+              </div>
+            </div>
+            <!-- Portfolio item -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-innner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/portfolio-6.jpg" alt="portfolio-6" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio Section End -->
+
+      <!-- Blog Section Start -->
+      <section class="blog section" id="blog">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Blog</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="blog-heading padd-15">
+              <h2>My Recent Blogs :</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Blog item -->
+            <div class="blog-item padd-15">
+              <div class="blog-item-inner">
+                <div class="image">
+                  <img src="images/portfolio/portfolio-1.jpg" alt="">
+                </div>
+                <div class="blog-info">
+                  <div class="category">
+                    <a href="#">
+                      <p><i class="fa-sharp fa-solid fa-book-open-reader"></i> Category 01</p>
+                    </a>
+                  </div>
+                  <div class="date">
+                    <p><i class="fa-solid fa-calendar-days"></i> 25 July, 1999</p>
+                  </div>
+                </div>
+                <a href="blog-single.html">
+                  <h4>Blog Title 01</h4>
+                </a>
+                <p>
+                  Calendrier en python
+                </p>
+                <a href="blog-single.html">Read More...</a>
+              </div>
+            </div>
+            <!-- Blog item -->
+            <div class="blog-item padd-15">
+              <div class="blog-item-inner">
+                <div class="image">
+                  <img src="images/portfolio/portfolio-2.jpg" alt="">
+                </div>
+                <div class="blog-info">
+                  <div class="category">
+                    <a href="#">
+                      <p><i class="fa-sharp fa-solid fa-book-open-reader"></i> Category 02</p>
+                    </a>
+                  </div>
+                  <div class="date">
+                    <p><i class="fa-solid fa-calendar-days"></i> 25 July, 1999</p>
+                  </div>
+                </div>
+                <a href="blog-single.html">
+                  <h4>Blog Title 02</h4>
+                </a>
+                <p>
+                  Découvrez mes articles sur les dernières tendances du développement web et mes conseils pratiques pour les créateurs de contenu numérique.
+                </p>
+                <a href="blog-single.html">Lire la suite...</a>
+                </div>
+                </div>
+                <!-- Blog item -->
+                <div class="blog-item padd-15">
+                <div class="blog-item-inner">
+                <div class="image">
+                    <img src="images/portfolio/portfolio-3.jpg" alt="Développement web">
+                </div>
+                <div class="blog-info">
+                    <div class="category">
+                    <a href="blog-single.html">
+                        <p><i class="fa-sharp fa-solid fa-book-open-reader"></i> Développement</p>
+                    </a>
+                    </div>
+                    <div class="date">
+                    <p><i class="fa-solid fa-calendar-days"></i> 15 Mars, 2024</p>
+                    </div>
+                </div>
+                <a href="blog-single.html">
+                    <h4>Les frameworks JavaScript en 2024</h4>
+                </a>
+                <p>
+                    Comparaison des principaux frameworks front-end et conseils pour choisir la bonne technologie pour votre projet.
+                </p>
+                <a href="blog-single.html">Lire la suite...</a>
+                </div>
+                </div>
+                <!-- Blog item -->
+                <div class="blog-item padd-15">
+                <div class="blog-item-inner">
+                <div class="image">
+                    <img src="images/portfolio/portfolio-4.jpg" alt="Design UI/UX">
+                </div>
+                <div class="blog-info">
+                    <div class="category">
+                    <a href="blog-single.html">
+                        <p><i class="fa-sharp fa-solid fa-book-open-reader"></i> Design</p>
+                    </a>
+                    </div>
+                    <div class="date">
+                    <p><i class="fa-solid fa-calendar-days"></i> 10 Février, 2024</p>
+                    </div>
+                </div>
+                <a href="blog-single.html">
+                    <h4>Principes essentiels du UI/UX moderne</h4>
+                </a>
+                <p>
+                    Les règles d'or pour créer des interfaces intuitives qui améliorent l'expérience utilisateur et boostent l'engagement.
+                </p>
+                <a href="#">Lire la suite...</a>
+                </div>
+                </div>
+                <!-- Blog item -->
+                <div class="blog-item padd-15">
+                <div class="blog-item-inner">
+                <div class="image">
+                    <img src="images/portfolio/portfolio-5.jpg" alt="SEO">
+                </div>
+                <div class="blog-info">
+                    <div class="category">
+                    <a href="blog-single.html">
+                        <p><i class="fa-sharp fa-solid fa-book-open-reader"></i> Marketing Digital</p>
+                    </a>
+                    </div>
+                    <div class="date">
+                    <p><i class="fa-solid fa-calendar-days"></i> 5 Janvier, 2024</p>
+                    </div>
+                </div>
+                <a href="blog-single.html">
+                    <h4>SEO : Les bonnes pratiques en 2024</h4>
+                </a>
+                <p>
+                    Guide des techniques d'optimisation SEO qui fonctionnent vraiment avec les nouveaux algorithmes des moteurs de recherche.
+                </p>
+                <a href="blog-single.html">Lire la suite...</a>
+                </div>
+                </div>
+                <!-- Blog item -->
+                <div class="blog-item padd-15">
+                <div class="blog-item-inner">
+                <div class="image">
+                    <img src="images/portfolio/portfolio-6.jpg" alt="Freelancing">
+                </div>
+                <div class="blog-info">
+                    <div class="category">
+                    <a href="blog-single.html">
+                        <p><i class="fa-sharp fa-solid fa-book-open-reader"></i> Carrière</p>
+                    </a>
+                    </div>
+                    <div class="date">
+                    <p><i class="fa-solid fa-calendar-days"></i> 20 Décembre, 2023</p>
+                    </div>
+                </div>
+                <a href="blog-single.html">
+                    <h4>Devenir freelance dans le digital</h4>
+                </a>
+                <p>
+                    Mes conseils et retours d'expérience pour lancer son activité indépendante dans le développement web et le design.
+                </p>
+                <a href="blog-single.html">Lire la suite...</a>
+                </div>
+                </div>
+                </div>
+
+        </div>
+      </section>
+      <!-- Blog Section End -->
+
+      <!-- Section Contact Début -->
+<section class="contact section" id="contact">
+  <div class="container">
+      <div class="row">
+          <div class="section-title padd-15">
+              <h2>Me Contacter</h2>
+          </div>
+      </div>
+      <h3 class="contact-title padd-15">Vous avez des questions ?</h3>
+      <h4 class="contact-sub-title padd-15">JE SUIS À VOTRE ÉCOUTE</h4>
+      <div class="row">
+          <!-- Info contact -->
+          <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <h4>Téléphone</h4>
+              <p>+509 5561 1401</p>
+          </div>
+          <!-- Info contact -->
+          <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+              <h4>Localisation</h4>
+              <p>Port-au-Prince</p>
+          </div>
+          <!-- Info contact -->
+          <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4>Email</h4>
+              <p>h-guerrier@gmail.com</p>
+          </div>
+          <!-- Info contact -->
+          <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-globe-europe"></i></div>
+              <h4>Site Web</h4>
+              <p>www.monsite.com</p>
+          </div>
+      </div>
+      <h3 class="contact-title padd-15">ENVOYEZ-MOI UN MESSAGE</h3>
+      <h4 class="contact-sub-title padd-15">
+          JE RÉPONDS RAPIDEMENT À VOS MESSAGES
+      </h4>
+      <!-- Formulaire de contact -->
+<div class="row">
+  <div class="contact-form padd-15">
+      <form id="contact-form">
+          <div class="row">
+              <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                      <input type="text" name="user_name" class="form-control" placeholder="Nom" required />
+                  </div>
+              </div>
+              <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                      <input type="email" name="user_email" class="form-control" placeholder="Email" required />
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                      <input type="text" name="subject" class="form-control" placeholder="Sujet" required />
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                      <textarea name="message" class="form-control" placeholder="Votre message" required></textarea>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                      <button type="submit" class="btn">Envoyer le message</button>
+                  </div>
+              </div>
+          </div>
+      </form>
+  </div>
+</div>
+<!-- Section Contact Fin -->
+</div>
+    <!-- Main Content End -->
+  </div>
+  <!-- Main Container End -->
+  <!-- Style Switcher Start -->
+  <div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+      <i class="fas"></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
+  <!-- Style Switcher End -->
+  <!-- Custom JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+  <script src="js/style-switcher.js"></script>
+</body>
+
+</html>
